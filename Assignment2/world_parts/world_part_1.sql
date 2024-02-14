@@ -36,9 +36,8 @@ CREATE TABLE `City` (
   `District` char(20) NOT NULL DEFAULT '',
   `Population` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`),
-  KEY `CountryCode` (`CountryCode`),
-  CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `Country` (`Code`)
-) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1;
+  KEY `CountryCode` (`CountryCode`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

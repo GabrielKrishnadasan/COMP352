@@ -411,8 +411,7 @@ CREATE TABLE `CountryLanguage` (
   `IsOfficial` enum('T','F') NOT NULL DEFAULT 'F',
   `Percentage` float(4,1) NOT NULL DEFAULT '0.0',
   PRIMARY KEY (`CountryCode`,`Language`),
-  KEY `CountryCode` (`CountryCode`),
-  CONSTRAINT `countryLanguage_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `Country` (`Code`)
+  KEY `CountryCode` (`CountryCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
